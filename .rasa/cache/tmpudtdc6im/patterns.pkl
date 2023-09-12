@@ -1,0 +1,6 @@
+[
+  {
+    "name": "tiempo",
+    "pattern": "\\b(\\d{1,2})\\b\\s*(?:d[eu]\\s*la)?\\s*(?:m[au]ñana|tarde)?\\s*(\\d{1,2})?"
+  }
+]

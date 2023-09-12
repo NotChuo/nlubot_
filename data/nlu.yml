@@ -1,0 +1,1546 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - buenas noches
+    - buenas tardes
+    - buenos dias
+    - hey
+    - hola
+    - hola amigo
+    - hola bro
+    - hola campeon
+    - holi
+    - oe
+    - ola
+    - oli
+    - que fue
+    - que fue pana
+    - que hay
+    - que hubo
+    - que lo que
+    - que mas
+    - que onda
+    - que onda pa
+    - que pasa
+    - que tal
+    - saludos
+
+#input of possible user goodbys
+- intent: goodbye
+  examples: |
+    - adios
+    - bye
+    - bye bye
+    - chao
+    - chau
+    - cuidate
+    - hablamos despues
+    - hasta la proxima
+    - hasta la vuelta
+    - hasta luego
+    - nos vemos
+    - nos vemos luego
+    - sayonara
+    - ten un buen dia
+
+#input of possible user affirm
+- intent: affirm
+  examples: |
+    - absolutamente
+    - asi es
+    - cierto
+    - claro
+    - claro que si
+    - correcto
+    - definitivamente
+    - eso suena bien
+    - por supuesto
+    - posi
+    - positivo
+    - seguro
+    - seguro que si
+    - si
+    - sin duda
+    - siuu
+    - totalmente
+    - zy
+    - si me sirvio
+    - si fue de mucha ayuda
+    - claro que me sirvio
+    - si gracias
+
+#input of possible user deny
+- intent: deny
+  examples: |
+    - de ninguna manera
+    - en realidad no
+    - nao
+    - negativo
+    - nel
+    - no
+    - no es tan simple
+    - no estoy convencido
+    - no estoy de acuerdo
+    - no estoy seguro
+    - no lo creo
+    - nope
+    - nunca
+    - no me sirvio
+    - no me convence tu respuesta
+    - no me gusta tu respuesta
+
+#input of possible user mood_great
+- intent: mood_great
+  examples: |
+    - perfecto
+    - genial
+    - increíble
+    - maravilloso
+    - Me siento muy bien
+    - Estoy genial
+    - Soy increíble
+    - Voy a salvar el mundo
+    - súper contento
+    - extremadamente bien
+    - tan tan perfecto
+    - tan bueno
+    - tan perfecto
+
+#input of possible user mood_unhappy
+- intent: mood_unhappy
+  examples: |
+    - mi día fue horrible
+    - estoy triste
+    - No me siento muy bien
+    - estoy decepcionado
+    - super triste
+    - estoy muy triste
+    - triste
+    - muy triste
+    - infeliz
+    - no bien
+    - no muy bien
+    - extremadamente triste
+    - tan triste
+    - decepcionado
+    - estoy tan triste
+    - horrible
+    - mi dia fue horrible
+    - me siento mal
+    - me siento un poco mal
+    - estoy un poco bajoneado
+    - estoy un poco triste
+
+- intent: mood_thanks
+  examples: | 
+    - Gracias
+    - Muchas gracias
+    - Gracias por tu ayuda
+    - Genial, gracias
+    - Te agradezco mucho
+    - ¡Qué amable de tu parte, gracias!
+    - Gracias, eres muy útil
+    - Excelente trabajo, gracias
+    - Gracias, me has ahorrado mucho tiempo
+    - Mil gracias
+    - te lo agradezco
+    - gracias por tus servicios
+    - si gracias me sirvio mucho
+
+#imput of possible use
+- intent: profany_and_Abuse
+  examples: |
+    - sexo
+    - relaciones sexuales
+    - follar
+    - coger
+    - culear
+    - perrear
+    - puta
+    - zorra
+    - hijueputa
+    - chucha
+    - hijo de puta
+    - maldita puta
+    - zorra de mierda
+    - malparido
+    - idiota
+    - pendejo
+    - gilipollas
+    - bobo
+    - boba
+    - boluda
+    - salame
+    - pelotudo
+    - garka
+    - forro
+    - tarado
+  
+  #imput of possible use
+    
+- intent: bot_challenge_inception
+  examples: |
+    - quien te creo?
+    - por quien fuiste creado?
+    - quien te programo?
+    - quien es tu creador?
+
+- intent: bot_challenge_father
+  examples: |
+    - quien es tu padre?
+    - quien es tu madre?
+
+# - intent: ask_faultFallback
+#     examples: |
+#     - quien es tu padre?
+#     - quien es tu madre?
+
+#input of possible user bot_challenge
+- intent: bot_challenge
+  examples: |
+    - ¿eres un bot?
+    - ¿estoy hablando con un bot?
+    - ¿que eres?
+    - eres un humano?
+
+#input of possible user bot_challenge_human
+- intent: bot_challenge_human
+  examples: |
+    - eres humano?
+    - estoy hablando con un humano?
+    - eres real?
+
+- intent: bot_feels
+  examples: |
+    - Como estas?   
+    - Cómo te encuentras?
+    - Qué tal estás?
+    - Cómo va todo?
+    - Cómo andas?
+    - Cómo te sientes?
+    - Cómo estuvo tu día?
+
+- intent: skills
+  examples: |
+    - que opciones de ayuda tienes?   
+    - como me puedes ayudar?
+    - para que me sirves
+    - para que sirves
+    - me puedes ayudar
+    - ayudame
+    - con que aplicaciones me puedes soporte
+    - cuales son las aplicaciones que manejas
+    - que puedes hacer por mi
+    - que puedes hacer
+    - cuales son tus funciones?
+    - dime para que sirves
+    - en que me puedes ayudar
+    - ¿Cuáles son los servicios de asistencia que ofreces?
+    - ¿Cómo puedes brindarme ayuda?
+    - ¿En qué áreas puedes ayudarme?
+    - ¿Cuál es tu función principal?
+    - Explícame qué puedes hacer por mí.
+    - ¿Cuál es tu propósito y cómo puedes ayudarme?
+
+- intent: give_time
+  examples: |
+    - puede decirme qué hora es?
+    - dime la hora
+    - tienes la hora
+    - que hora es?
+    - podrias decirme la hora por favor?
+    - quisieras decirme que hora es?
+    - cual es la hora actual?
+
+- intent: ask_teacher
+  examples: | 
+    - cuantas aulas tiene aignadas el ing [Kelvin](nombre) [Rosado](apellido)
+    - que aulas tiene aignadas el ing [Kalvin](nombre:Kelvin) [Rosada](apellido:Rosado)
+    - Necesito saber las aulas que el ingeniero [Klevin](nombre:Kelvin) [Rosado](apellido:Rosado) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [KELVIN](nombre:Kelvin) [Rosado](apellido:Rosado)?
+    - Quisiera saber las reservas de aulas del ingeniero [kelvin](nombre:Kelvin) [Rosado](apellido:Rosado).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [kElv1n](nombre:Kelvin) [Rosado](apellido:Rosado)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [celvin](nombre:Kelvin) [Rosado](apellido:Rosado).
+    - ¿Cuáles son las aulas asignadas al ingeniero [Melvin](nombre:Kelvin) [Rosado](apellido:Rosado)?
+    - Por favor, dime las aulas reservadas por el ingeniero [Kelvin](nombre:Kelvin) [Rosado](apellido:Rosado) para esta semana. 
+    - cuantas aulas tiene reservada el ing [Fernando](nombre) [Moreira](apellido)
+    - que aulas tiene reservado el ing [Fer](nombre:Fernando) [Morerira](apellido:Moreira)
+    - Necesito saber las aulas que el ingeniero [fercho](nombre:Fernando) [Morerira](apellido:Moreira) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Fernan](nombre:Fernando) [Morerira](apellido:Moreira)?
+    - Quisiera saber las reservas de aulas del ingeniero [fernando](nombre:Fernando) [Morerira](apellido:Moreira).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [nando](nombre:Fernando) [Morerira](apellido:Moreira)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [F3rnando](nombre:Fernando) [moreira](apellido:Moreira).
+    - ¿Cuáles son las aulas asignadas al ingeniero [FERNANDO](nombre:Fernando) [Moreira](apellido:Moreira)?
+    - Por favor, dime las aulas reservadas por el ingeniero [Fernandi](nombre:Fernando) [Morerira](apellido:Moreira) para esta semana.
+    - cuantas aulas tiene reservada el ing [Ramon](nombre) [Moreira](apellido)
+    - que aulas tiene reservado el ing [JOFFRE](nombre:Ramon) [Moreira](apellido:Moreira)
+    - Necesito saber las aulas que el ingeniero [ramoncito](nombre:Ramon) [Moreira](apellido:Moreira) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [redes](nombre:Ramon) [Moreira](apellido:Moreira)?
+    - Quisiera saber las reservas de aulas del ingeniero [Ram0n](nombre:Ramon) [Moreira](apellido:Moreira).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [ramon](nombre:Ramon) [Moreira](apellido:Moreira)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [Joffre](nombre:Ramon) [Moreira](apellido:Moreira).
+    - ¿Cuáles son las aulas asignadas al ingeniero [JOFFRE](nombre:Ramon) [Moreira](apellido:Moreira)?
+    - Por favor, dime las aulas reservadas por el ingeniero [joffre](nombre:Ramon) [Moreira](apellido:Moreira) para esta semana.
+    - cuantas aulas tiene reservada el ing [Luis](nombre) [Cedeño](apellido) Valarezo
+    - que aulas tiene reservado el ing [Cristobal](nombre:Luis) [Cedeño](apellido:Cedeño)
+    - Necesito saber las aulas que el ingeniero [luis](nombre:Luis) [Cedeño](apellido:Cedeño) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [viejito](nombre:Luis) [Cedeño](apellido:Cedeño)?
+    - Quisiera saber las reservas de aulas del ingeniero [luiz](nombre:Luis) [Cedeño](apellido:Cedeño).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [louis](nombre:Luis) [Cedeño](apellido:Cedeño)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [LUIS](nombre:Luis) [Cedeño](apellido:Cedeño).
+    - ¿Cuáles son las aulas asignadas al ingeniero [CRISTOBAL](nombre:Luis) [CEDEÑO](apellido:Cedeño)?
+    - Por favor, dime las aulas reservadas por el ingeniero [luis](nombre:Luis) [Cedeno](apellido:Cedeño) para esta semana.
+    - cuantas aulas tiene reservada el ing [Alfonso](nombre) [Loor](apellido)
+    - que aulas tiene reservado el ing [Tomas](nombre:Alfonso) [Loor](apellido:Loor)
+    - Necesito saber las aulas que el ingeniero [TOMAS](nombre:Alfonso) [Loor](apellido:Loor) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Pipo](nombre:Alfonso) [Loor](apellido:Loor)?
+    - Quisiera saber las reservas de aulas del ingeniero [toma](nombre:Alfonso) [Loor](apellido:Loor).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [ALFONSO](nombre:Alfonso) [Loor](apellido:Loor)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [alfonso](nombre:Alfonso) [Loor](apellido:Loor).
+    - ¿Cuáles son las aulas asignadas al ingeniero [tomas](nombre:Alfonso) [Loor](apellido:Loor)?
+    - Por favor, dime las aulas reservadas por el ingeniero [tomasss](nombre:Alfonso) [Loor](apellido:Loor) para esta semana.
+    - cuantas aulas tiene reservada el ing [Angel](nombre) [Velez](apellido)
+    - que aulas tiene reservado el ing [ANGEL](nombre:Angel) [Velez](apellido:Velez)
+    - Necesito saber las aulas que el ingeniero [Angelito](nombre:Angel) [Velez](apellido:Velez) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Alberto](nombre:Angel) [Velez](apellido:Velez)?
+    - Quisiera saber las reservas de aulas del ingeniero [ALBERTO](nombre:Angel) [Velez](apellido:Velez).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [Albertito](nombre:Angel) [Velez](apellido:Velez)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [Angeel](nombre:Angel) [Velez](apellido:Velez).
+    - ¿Cuáles son las aulas asignadas al ingeniero [angel](nombre:Angel) [Velez](apellido:Velez)?
+    - Por favor, dime las aulas reservadas por el ingeniero [Angel](nombre:Angel) [Velez](apellido:Velez) para esta semana.
+    - cuantas aulas tiene reservada el ing [Javier](nombre) [Lopez](apellido)
+    - que aulas tiene asignadas el ing [JAVIER](nombre:Javier) [Lopez](apellido:Lopez)
+    - Necesito saber las aulas que el ingeniero [Hernan](nombre:Javier) [Lopez](apellido:Lopez) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [HERNAN](nombre:Javier) [Lopez](apellido:Lopez)?
+    - Quisiera saber las reservas de aulas del ingeniero [Javiercito](nombre:Javier) [Lopez](apellido:Lopez).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [Javier chiquito](nombre:Javier) [Lopez](apellido:Lopez)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [javier](nombre:Javier) [Lopez](apellido:Lopez).
+    - ¿Cuáles son las aulas asignadas al ingeniero [hernan](nombre:Javier) [Lopez](apellido:Lopez)?
+    - Por favor, dime las aulas reservadas por el ingeniero [hernan](nombre:Javier) [Lopez](apellido:Lopez) para esta semana.
+    - cuantas aulas tiene reservada el ing [Yimmy](nombre) [Loor](apellido:Loor)
+    - que aulas tiene reservado el ing [YIMMY](nombre:Yimmy) [Loor](apellido:Loor)
+    - Necesito saber las aulas que el ingeniero [SALVADOR](nombre:Yimmy) [Loor](apellido:Loor) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Yimmy](nombre:Yimmy) [Loor](apellido)?
+    - Quisiera saber las reservas de aulas del ingeniero [Salvador](nombre:Yimmy) [Loor](apellido:Loor).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [salvador](nombre:Yimmy) [Loor](apellido:Loor)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [yimmi](nombre:Yimmy) [Loor](apellido:Loor).
+    - ¿Cuáles son las aulas asignadas al ingeniero [Yimmy](nombre:Yimmy) [Loor](apellido:Loor)?
+    - Por favor, dime las aulas reservadas por el ingeniero [Yimmy](nombre:Yimmy) [Loor](apellido:Loor) para esta semana.
+    - cuantas aulas tiene reservada la ing [Maryury](nombre) [Zamora](apellido)
+    - que aulas tiene aignadas la ing [maryuri](nombre:Maryury) [Zamora](apellido:Zamora)
+    - Necesito saber las aulas que la ingeniera [Maryury](nombre:Maryury) [Zamora](apellido:Zamora) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas la profesora [Maryuri](nombre:Maryury) [Zamora](apellido:Zamora)?
+    - Quisiera saber las reservas de aulas la ingeniera [MARYURI](nombre:Maryury) [Zamora](apellido:Zamora).
+    - ¿Hay alguna reserva de aulas registrada para la doctora [ALEXANDRA](nombre:Maryury) [Zamora](apellido:Zamora)?
+    - Me gustaría obtener información sobre las aulas reservadas por el Dr [Alexandra](nombre:Maryury) [Zamora](apellido:Zamora).
+    - ¿Cuáles son las aulas asignadas la ingeniera [alexandra](nombre:Maryury) [Zamora](apellido:Zamora)?
+    - Por favor, dime las aulas reservadas por la Doctora [Maryury](nombre:Maryury) [Zamora](apellido:Zamora) para esta semana.
+    - cuantas aulas tiene reservada el ing [Gustavo](nombre) [Molina](apellido)
+    - que aulas tiene aignadas el ing [gustavito](nombre:Gustavo) [Molina](apellido:Molina)
+    - Necesito saber las aulas que el ingeniero [Gustvo](nombre:Gustavo) [Molina](apellido:Molina) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Gustavo](nombre:Gustavo) [Molina](apellido:Molina)?
+    - Quisiera saber las reservas de aulas del ingeniero [GUSTAVO](nombre:Gustavo) [Molina](apellido:Molina).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [gabriel](nombre:Gustavo) [Molina](apellido:Molina)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [GABRIEL](nombre:Gustavo) [Molina](apellido:Molina).
+    - ¿Cuáles son las aulas asignadas al ingeniero [Gabriel](nombre:Gustavo) [Molina](apellido:Molina)?
+    - Por favor, dime las aulas reservadas por el ingeniero [Gustavo](nombre:Gustavo) [Molina](apellido:Molina) para esta semana.
+    - cuantas aulas tiene aignadas la ing [Jessica](nombre) [Morales](apellido)
+    - que aulas tiene reservado la ing [jessica](nombre:Jessica) [Morales](apellido:Morales)
+    - Necesito saber las aulas que la ingeniera [JESSICA](nombre:Jessica) [Morales](apellido:Morales) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas la profesora [Yesica](nombre:Jessica) [Morales](apellido:Morales)?
+    - Quisiera saber las reservas de aulas de la ingeniera [Jesica](nombre:Jessica) [Morales](apellido:Morales).
+    - ¿Hay alguna reserva de aulas registrada para la ingeniera [Joanna](nombre:Jessica) [Morales](apellido:Morales)?
+    - Me gustaría obtener información sobre las aulas reservadas por la ingeniera [Johanna](nombre:Jessica) [Morales](apellido:Morales).
+    - ¿Cuáles son las aulas aignadas a la ingeniera [Jessica](nombre:Jessica) [Morales](apellido:Morales)?
+    - Por favor, dime las aulas reservadas por la inge [Jessica](nombre:Jessica) [Morales](apellido:Morales) para esta semana.
+    - cuantas aulas tiene reservada la ing [Aura](nombre) [Zambrano](apellido)
+    - que aulas tiene reservado la ing [AURA](nombre:Aura) [Zambrano](apellido:Zambrano)
+    - Necesito saber las aulas que la ingeniera [Aurita](nombre:Aura) [Zambrano](apellido:Zambrano) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas la profesora [Auritalol](nombre:Aura) Zambrano?
+    - Quisiera saber las reservas de aulas de la ingeniera [DOLORES](nombre:Aura) [Zambrano](apellido:Zambrano).
+    - ¿Hay alguna reserva de aulas registrada para la ingeniera [dolores](nombre:Aura) [Zambrano](apellido:Zambrano)?
+    - Me gustaría obtener información sobre las aulas reservadas por la ingeniera [Dolores](nombre:Aura) [Zambrano](apellido:Zambrano).
+    - ¿Cuáles son las aulas asignadas a la ingeniera [Aura](nombre:Aura) [Zambrano](apellido:Zambrano)?
+    - Por favor, dime las aulas reservadas por la inge [Aura](nombre:Aura) [Zambrano](apellido:Zambrano) para esta semana.
+    - cuantas aulas tiene reservada la ing [Ligia](nombre) [Zambrano](apellido:Zambrano)
+    - que aulas tiene reservado la ing [LIGIA](nombre:Ligia) [Zambrano](apellido:Zambrano)
+    - Necesito saber las aulas que la ingeniera [Ligia](nombre:Ligia) [Zambrano](apellido:Zambrano) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas la profesora [ligia](nombre:Ligia) [Zambrano](apellido:Zambrano)?
+    - Quisiera saber las reservas de aulas de la ingeniera [ELENA](nombre:Ligia) [Zambrano](apellido:Zambrano).
+    - ¿Hay alguna reserva de aulas registrada para la ingeniera [elena](nombre:Ligia) [Zambrano](apellido:Zambrano)?
+    - Me gustaría obtener información sobre las aulas reservadas por la ingeniera [Elena](nombre:Ligia) Zambrano.
+    - ¿Cuáles son las aulas asignadas a la ingeniera [Ligia](nombre:Ligia) [Zambrano](apellido:Zambrano)?
+    - Por favor, dime las aulas reservadas por la inge [Ligia](nombre:Ligia) [Zambrano](apellido:Zambrano) para esta semana.
+    - cuantas aulas tiene aignadas el ing [Daniel](nombre) [Mera](apelldio)
+    - que aulas tiene aignadas el ing [DANIEL](nombre:Daniel) [Mera](apelldio:Mera)
+    - Necesito saber las aulas que el ingeniero [Daniel](nombre:Daniel) [Mera](apelldio:Mera) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene reservadas el profesor [Danielito](nombre:Daniel) [Mera](apelldio:Mera)?
+    - Quisiera saber las reservas de aulas del ingeniero [Agustin](nombre:Daniel) [Mera](apelldio:Mera).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [agustin](nombre:Daniel) [Mera](apelldio:Mera)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [AGUSTIN](nombre:Daniel) [Mera](apelldio:Mera).
+    - ¿Cuáles son las aulas asignadas al ingeniero [Daniel](nombre:Daniel) [Mera](apelldio:Mera)?
+    - Por favor, dime las aulas aignadas por el ingeniero [daniel](nombre:Daniel) [Mera](apelldio:Mera) para esta semana.
+    - cuantas aulas tiene reservada el ing [Ricardo](nombre) [Velez](apellido)
+    - que aulas tiene aignadas el ing [RICARDO](nombre:Ricardo) [Velez](apellido:Velez)
+    - Necesito saber las aulas que el ingeniero [ricardo](nombre:Ricardo) [Velez](apellido:Velez) tiene reservadas
+    - ¿Puedes decirme cuántas aulas tiene aignadas el profesor [Ricardito](nombre:Ricardo) [Velez](apellido:Velez)?
+    - Quisiera saber las reservas de aulas del ingeniero [Antonio](nombre:Ricardo) [Velez](apellido:Velez).
+    - ¿Hay alguna reserva de aulas registrada para el ingeniero [antonio](nombre:Ricardo) [Velez](apellido:Velez)?
+    - Me gustaría obtener información sobre las aulas reservadas por el ingeniero [ANTONIO](nombre:Ricardo) [Velez](apellido:Velez).
+    - ¿Cuáles son las aulas asignadas al ingeniero [Ricardo](nombre:Ricardo) [Velez](apellido:Velez)?
+    - Por favor, dime las aulas reservadas por el ingeniero [ricardo](nombre:Ricardo) [Velez](apellido:Velez) para esta semana.
+    
+- intent: ask_room
+  examples: | 
+    - quien esta ocupando el [laboratorio 205](habitacion:Lab. 205)
+    - esta libre el [Lab 104](habitacion:Lab. 104)
+    - El [Laboratorio104](habitacion:Lab. 104) esta disponible?
+    - ¿Está disponible el [Lab 104](habitacion:Lab. 104)?
+    - ¿Está ocupado el [LABORATORIO 104](habitacion:Lab. 104)?
+    - ¿Hay disponibilidad en el [Laboratorio ciento cuatro](habitacion:Lab. 104)?
+    - Quisiera saber si el [Laboratario ciento 4](habitacion:Lab. 104) está libre.
+    - ¿Está desocupado el [Laboratorio 104](habitacion:Lab. 104)
+    - esta libre el [Lab 102](habitacion:Lab. 102)
+    - El [Laboratorio102](habitacion:Lab. 102) esta disponible?
+    - ¿Está disponible el [Lab 102](habitacion:Lab. 102)?
+    - ¿Está ocupado el [LABORATORIO 102](habitacion:Lab. 102)?
+    - ¿Hay disponibilidad en el [Laboratorio ciento dos](habitacion:Lab. 102)?
+    - Quisiera saber si el [Laboratario cuiento 2](habitacion:Lab. 102) está libre.
+    - ¿Está desocupado el [Laboratorio 102](habitacion:Lab. 102)
+    - esta libre el [Lab 205](habitacion:Lab. 205)
+    - El [Laboratorio205](habitacion:Lab. 205) esta disponible?
+    - ¿Está disponible el [Lab 205](habitacion:Lab. 205)?
+    - ¿Está ocupado el [LABORATORIO 205](habitacion:Lab. 205)?
+    - ¿Hay disponibilidad en el [Laboratorio dociento cinco](habitacion:Lab. 205)?
+    - Quisiera saber si el [Laboratario docientos 5](habitacion:Lab. 205) está libre.
+    - ¿Está desocupado el [Laboratorio 205](habitacion:Lab. 205)
+    - esta libre el [Lab 103](habitacion:Lab. 103)
+    - El [Laboratorio103](habitacion:Lab. 103) esta disponible?
+    - ¿Está disponible el [Lab 103](habitacion:Lab. 103)?
+    - ¿Está ocupado el [LABORATORIO 103](habitacion:Lab. 103)?
+    - ¿Hay disponibilidad en el [Laboratorio ciento tres](habitacion:Lab. 103)?
+    - Quisiera saber si el [Laboratario cuiento 3](habitacion:Lab. 103) está libre.
+    - ¿Está desocupado el [Laboratorio 103](habitacion:Lab. 103)
+    - esta libre el [Lab 204](habitacion:Lab. 204)
+    - El [Laboratorio204](habitacion:Lab. 204) esta disponible?
+    - ¿Está disponible el [Lab 204](habitacion:Lab. 204)?
+    - ¿Está ocupado el [Laboratorio204](habitacion:Lab. 204)?
+    - ¿Hay disponibilidad en el [Laboratorio dociento cuatro](habitacion:Lab. 204)?
+    - Quisiera saber si el [Laboratario dociento 4](habitacion:Lab. 204) está libre.
+    - ¿Está desocupado el [Laboratorio 204](habitacion:Lab. 204)
+    - esta libre el [aula 101](habitacion:Aula 101)
+    - El [aula101](habitacion:Aula 101) esta disponible?
+    - ¿Está disponible el [aula 101](habitacion:Aula 101)?
+    - ¿Está ocupado el [AULA 101](habitacion:Aula 101)?
+    - ¿Hay disponibilidad en el [aula ciento uno](habitacion:Aula 101)?
+    - Quisiera saber si el [aula ciento 1](habitacion:Aula 101) está libre.
+    - ¿Está desocupado el [aulo 101](habitacion:Aula 101)
+    - esta libre el [aula 102](habitacion:Aula 102)
+    - El [aula102](habitacion:Aula 102) esta disponible?
+    - ¿Está disponible el [aula 102](habitacion:Aula 102)?
+    - ¿Está ocupado el [AULA 102](habitacion:Aula 102)?
+    - ¿Hay disponibilidad en el [aula ciento dos](habitacion:Aula 102)?
+    - Quisiera saber si el [aula ciento 2](habitacion:Aula 102) está libre.
+    - ¿Está desocupado el [aulo 102](habitacion:Aula 102)
+    - esta libre el [aula 304](habitacion:Aula 304)
+    - El [aula304](habitacion:Aula 304) esta disponible?
+    - ¿Está disponible el [aula 304](habitacion:Aula 304)?
+    - ¿Está ocupado el [AULA 304](habitacion:Aula 304)?
+    - ¿Hay disponibilidad en el [aula treciento cuatro](habitacion:Aula 304)?
+    - Quisiera saber si el [aula treciento 4](habitacion:Aula 304) está libre.
+    - ¿Está desocupado el [aulo 304](habitacion:Aula 304)
+    - esta libre el [aula 302](habitacion:Aula 302)
+    - El [aula302](habitacion:Aula 302) esta disponible?
+    - ¿Está disponible el [aula 302](habitacion:Aula 302)?
+    - ¿Está ocupado el [AULA 302](habitacion:Aula 302)?
+    - ¿Hay disponibilidad en el [aula treciento dos](habitacion:Aula 302)?
+    - Quisiera saber si el [aula treciento 2](habitacion:Aula 302) está libre.
+    - ¿Está desocupado el [aulo 302](habitacion:Aula 302)
+    - quien tiene reservado el [aula 101](habitacion)
+    - quiero reservar el [laboratorio 104](habitacion)
+    - necesito hacer una reserva para el [aula 101](habitacion)
+    - quiero saber si la [laboratorio 102](habitacion) está ocupada
+    - me gustaría reservar la [aula 102](habitacion)
+    - hay alguien usando el [aula 302](habitacion)?
+    - necesito saber si el [laboratorio 205](habitacion) está reservado
+    - quien tiene reservado el [aula 306](habitacion)
+    - está ocupado el [laboratorio 103](habitacion)?
+    - me interesa saber si la [aula 303](habitacion) está reservada
+    - quiero hacer una reserva para el [aula 304](habitacion)
+
+- intent: ask_time_room
+  examples: |
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [7 de la mañana](tiempo:07:00:00)
+    - esta disponible a las [7 de la mañana](tiempo:07:00:00) el [laboratorio 104](habitacion:Lab. 104) 
+    - ¿está disponible a las [7:30 AM](tiempo:07:30:00) el [laboratorio 104](habitacion:Lab. 104)?
+    - Quisiera saber si a las [8 AM](tiempo:08:00:00) el [laboratorio 104](habitacion:Lab. 104) está libre 
+    - A qué hora puedo acceder al [laboratorio 104](habitacion:Lab. 104)? ¿Está disponible a las [9 de la mañana](tiempo:09:00:00)?
+    - Necesito utilizar a las [10 AM](tiempo:10:00:00) el [laboratorio 104](habitacion:Lab. 104). ¿Es posible?
+    - esta libre el [laboratorio ciento cuatro](habitacion:Lab. 104) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [7](tiempo:07:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [7](tiempo:07:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [8 de la mañana](tiempo:08:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [8](tiempo:08:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [8](tiempo:08:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [8](tiempo:08:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [9 de la mañana](tiempo:09:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [9](tiempo:09:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [9](tiempo:09:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [9](tiempo:09:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [10 de la mañana](tiempo:10:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [dies de la mañana](tiempo:10:00:00)
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [10](tiempo:10:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [10](tiempo:10:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [10](tiempo:10:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [11 de la mañana](tiempo:11:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [once de la mañana](tiempo:11:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [11](tiempo:11:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [11](tiempo:11:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [11](tiempo:11:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [12 de la tarde](tiempo:12:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [doce de la tarde](tiempo:12:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [12](tiempo:12:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [12](tiempo:12:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [12](tiempo:12:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a la [1 de la tarde](tiempo:13:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a la [una de la tarde](tiempo:13:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a la [1](tiempo:13:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a la [1](tiempo:13:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a la [1](tiempo:13:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [2 de la tarde](tiempo:14:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [dos de la tarde](tiempo:14:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [2](tiempo:14:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [2](tiempo:14:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [2](tiempo:14:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [3 de la tarde](tiempo:15:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [tres de la tarde](tiempo:15:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [3](tiempo:15:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [3](tiempo:15:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [3](tiempo:15:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [4 de la tarde](tiempo:16:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [cuatro de la tarde](tiempo:16:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [4](tiempo:16:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [4](tiempo:16:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [4](tiempo:16:00:00)?
+    - esta disponible el [laboratorio 104](habitacion:Lab. 104) a las [5 de la tarde](tiempo:17:00:00)
+    - esta libre el [laboratorio 104](habitacion:Lab. 104) a las [cinco de la tarde](tiempo:17:00:00)?
+    - Está disponible el [laboratorio 104](habitacion:Lab. 104) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [laboratorio 104](habitacion:Lab. 104) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [laboratorio 104](habitacion:Lab. 104) a las [5](tiempo:17:00:00)
+    - Está ocupado el [laboratorio 104](habitacion:Lab. 104) a las [5](tiempo:17:00:00)?
+    - Hay disponibilidad en el [laboratorio 104](habitacion:Lab. 104) a las [5](tiempo:17:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [7 de la mañana](tiempo:07:00:00)
+    - Esta libre el [laboratorio cientos dos](habitacion:Lab. 102) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [7](tiempo:07:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [7](tiempo:07:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [8](tiempo:08:00:00)
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [8](tiempo:08:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [8](tiempo:08:00:00)
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [8](tiempo:08:00:00)
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [9](tiempo:09:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [9](tiempo:09:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [9](tiempo:09:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [10](tiempo:10:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [10](tiempo:10:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [10](tiempo:10:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [11](tiempo:11:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [11](tiempo:11:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [11](tiempo:11:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [12 del dia](tiempo:12:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [doce del tarde](tiempo:12:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [12](tiempo:12:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [12](tiempo:12:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [12](tiempo:12:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [1](tiempo:13:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [1](tiempo:13:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [1](tiempo:13:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [1](tiempo:13:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [1](tiempo:13:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [2](tiempo:14:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [2](tiempo:14:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [2](tiempo:14:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [3](tiempo:15:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [3](tiempo:15:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [3](tiempo:15:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [4](tiempo:16:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [4](tiempo:16:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [4](tiempo:16:00:00)?
+    - Esta disponible el [laboratorio 102](habitacion:Lab. 102) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [laboratorio 102](habitacion:Lab. 102) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [laboratorio 102](habitacion:Lab. 102) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [laboratorio 102](habitacion:Lab. 102) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [laboratorio 102](habitacion:Lab. 102) a las [5](tiempo:17:00:00)
+    - Está ocupado el [laboratorio 102](habitacion:Lab. 102) a las [5](tiempo:17:00:00)?
+    - Hay disponibilidad en el [laboratorio 102](habitacion:Lab. 102) a las [5](tiempo:17:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [7 de la mañana](tiempo:07:00:00)?
+    - Esta libre el [laboratorio docientos cinco](habitacion:Lab. 205) a las [siete de la mañana](tiempo:07:00:00)
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [7](tiempo:07:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [7](tiempo:07:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [8](tiempo:08:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [8](tiempo:08:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [8](tiempo:08:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [9](tiempo:09:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [9](tiempo:09:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [9](tiempo:09:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [10](tiempo:10:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [10](tiempo:10:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [10](tiempo:10:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [11](tiempo:11:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [11](tiempo:11:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [11](tiempo:11:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [12 del dia](tiempo:12:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [doce del mediodía](tiempo:12:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [12](tiempo:12:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [12](tiempo:12:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [12](tiempo:12:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a la [1 de la tarde](tiempo:13:00:00)?
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a la [1](tiempo:13:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a la [1](tiempo:13:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a la [1](tiempo:13:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [2](tiempo:14:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [2](tiempo:14:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [2](tiempo:14:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [3](tiempo:15:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [3](tiempo:15:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [3](tiempo:15:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [4](tiempo:16:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [4](tiempo:16:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [4](tiempo:16:00:00)?
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [laboratorio 205](habitacion:Lab. 205) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [laboratorio 205](habitacion:Lab. 205) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [laboratorio 205](habitacion:Lab. 205) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [laboratorio 205](habitacion:Lab. 205) a las [5](tiempo:17:00:00)
+    - Está ocupado el [laboratorio 205](habitacion:Lab. 205) a las [5](tiempo:17:00:00)?
+    - Hay disponibilidad en el [laboratorio 205](habitacion:Lab. 205) a las [5](tiempo:17:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [7 de la mañana](tiempo:07:00:00)
+    - Esta libre el [laboratorio ciento tres](habitacion:Lab. 103) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [7](tiempo:07:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [7](tiempo:07:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [8](tiempo:08:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [8](tiempo:08:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [8](tiempo:08:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [9](tiempo:09:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [9](tiempo:09:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [9](tiempo:09:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [10](tiempo:10:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [10](tiempo:10:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [10](tiempo:10:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [11](tiempo:11:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [11](tiempo:11:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [11](tiempo:11:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [doce del tarde](tiempo:12:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [12](tiempo:12:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [12](tiempo:12:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [12](tiempo:12:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a la [1](tiempo:13:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a la [1](tiempo:13:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a la [1](tiempo:13:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [2](tiempo:14:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [2](tiempo:14:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [2](tiempo:14:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [3](tiempo:15:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [3](tiempo:15:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [3](tiempo:15:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [4](tiempo:16:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [4](tiempo:16:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [4](tiempo:16:00:00)?
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [laboratorio 103](habitacion:Lab. 103) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [laboratorio 103](habitacion:Lab. 103) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [laboratorio 103](habitacion:Lab. 103) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [laboratorio 103](habitacion:Lab. 103) a las [5](tiempo:17:00:00)
+    - Está ocupado el [laboratorio 103](habitacion:Lab. 103) a las [5](tiempo:17:00:00)?
+    - Hay disponibilidad en el [laboratorio 103](habitacion:Lab. 103) a las [5](tiempo:17:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [7 de la mañana](tiempo:07:00:00)
+    - Esta libre el [laboratorio docientos cuatro](habitacion:Lab. 204) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [7](tiempo:07:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [7](tiempo:07:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [8](tiempo:08:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [8](tiempo:08:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [8](tiempo:08:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [9](tiempo:09:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [9](tiempo:09:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [9](tiempo:09:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [10](tiempo:10:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [10](tiempo:10:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [10](tiempo:10:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [11](tiempo:11:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [11](tiempo:11:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [11](tiempo:11:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [doce del tarde](tiempo:12:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [12](tiempo:12:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [12](tiempo:12:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [12](tiempo:12:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a la [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a la [1](tiempo:13:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a la [1](tiempo:13:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a la [1](tiempo:13:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [2](tiempo:14:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [2](tiempo:14:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [2](tiempo:14:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [3](tiempo:15:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [3](tiempo:15:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [3](tiempo:15:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [4](tiempo:16:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [4](tiempo:16:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [4](tiempo:16:00:00)?
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [laboratorio 204](habitacion:Lab. 204) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [laboratorio 204](habitacion:Lab. 204) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [laboratorio 204](habitacion:Lab. 204) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [laboratorio 204](habitacion:Lab. 204) a las [5](tiempo:17:00:00)
+    - Está ocupado el [laboratorio 204](habitacion:Lab. 204) a las [5](tiempo:17:00:00)?
+    - Hay disponibilidad en el [laboratorio 204](habitacion:Lab. 204) a las [5](tiempo:17:00:00)?
+    - Está disponible el [Aula 101](habitacion) a las [7 de la mañana](tiempo:07:00:00)
+    - Esta libre el [aula ciento uno](habitacion:Aula 101) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [7](tiempo:07:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [7](tiempo:07:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [8](tiempo:08:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [8](tiempo:08:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [9](tiempo:09:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [9](tiempo:09:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [10](tiempo:10:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [10](tiempo:10:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [11](tiempo:11:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [11](tiempo:11:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [doce del tarde](tiempo:12:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [12](tiempo:12:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [12](tiempo:12:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a la [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a la [1](tiempo:13:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a la [1](tiempo:13:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [2](tiempo:14:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [2](tiempo:14:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [3](tiempo:15:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [3](tiempo:15:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [4](tiempo:16:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [4](tiempo:16:00:00)?
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [aula 101](habitacion:Aula 101) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [aula 101](habitacion:Aula 101) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [aula 101](habitacion:Aula 101) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [aula 101](habitacion:Aula 101) a las [5](tiempo:17:00:00)
+    - Hay disponibilidad en el [aula 101](habitacion:Aula 101) a las [5](tiempo:17:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [7 de la mañana](tiempo:07:00:00)
+    - Esta libre el [aula ciento dos](habitacion:Aula 102) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [7](tiempo:07:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [7](tiempo:07:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [8](tiempo:08:00:00)
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [8](tiempo:08:00:00)
+    - Hay disponibilidad en el [habitacion 102](aula:Aula 102) a las [8](tiempo:08:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [9](tiempo:09:00:00)
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [9](tiempo:09:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [9](tiempo:09:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [10](tiempo:10:00:00)
+    - Hay disponibilidad en el [habitacion 102](aula:Aula 102) a las [10](tiempo:10:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [11](tiempo:11:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [11](tiempo:11:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [doce del dia](tiempo:12:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [12](tiempo:12:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [12](tiempo:12:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a la [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a la [1](tiempo:13:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a la [1](tiempo:13:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [2](tiempo:14:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [2](tiempo:14:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [3](tiempo:15:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [3](tiempo:15:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [4](tiempo:16:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [4](tiempo:16:00:00)?
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [aula 102](habitacion:Aula 102) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [aula 102](habitacion:Aula 102) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [aula 102](habitacion:Aula 102) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [aula 102](habitacion:Aula 102) a las [5](tiempo:17:00:00)
+    - Hay disponibilidad en el [aula 102](habitacion:Aula 102) a las [5](tiempo:17:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [7 de la mañana](tiempo:07:00:00)?
+    - Esta libre el [aula trecientos dos](habitacion:Aula 302) a las [siete de la mañana](tiempo:07:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [7](tiempo:07:00:00)
+    - Está ocupado el [aula 302](habitacion:Aula 302) a las [7](tiempo:07:00:00)?
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [7](tiempo:07:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [8](tiempo:08:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [8](tiempo:08:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [9](tiempo:09:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [9](tiempo:09:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [10](tiempo:10:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [10](tiempo:10:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [11](tiempo:11:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [11](tiempo:11:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [doce del dia](tiempo:12:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [12](tiempo:12:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [12](tiempo:12:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a la [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a la [1](tiempo:13:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a la [1](tiempo:13:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [2](tiempo:14:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [2](tiempo:14:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [3](tiempo:15:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [3](tiempo:15:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [4](tiempo:16:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [4](tiempo:16:00:00)?
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [aula 302](habitacion:Aula 302) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [aula 302](habitacion:Aula 302) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [aula 302](habitacion:Aula 302) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [aula 302](habitacion:Aula 302) a las [5](tiempo:17:00:00)
+    - Hay disponibilidad en el [aula 302](habitacion:Aula 302) a las [5](tiempo:17:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [7 de la mañana](tiempo:07:00:00)?
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [siete de la mañana](tiempo:07:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [7](tiempo:07:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [7](tiempo:07:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [7](tiempo:07:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [7](tiempo:07:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [8 de la mañana](tiempo:08:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [ocho de la mañana](tiempo:08:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [8](tiempo:08:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [8](tiempo:08:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [8](tiempo:08:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [8](tiempo:08:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [9 de la mañana](tiempo:09:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [nueve de la mañana](tiempo:09:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [9](tiempo:09:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [9](tiempo:09:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [9](tiempo:09:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [9](tiempo:09:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [10 de la mañana](tiempo:10:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [diez de la mañana](tiempo:10:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [10](tiempo:10:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [10](tiempo:10:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [10](tiempo:10:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [10](tiempo:10:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [11 de la mañana](tiempo:11:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [once de la mañana](tiempo:11:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [11](tiempo:11:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [11](tiempo:11:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [11](tiempo:11:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [11](tiempo:11:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [12 del mediodía](tiempo:12:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [doce del dia](tiempo:12:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [12](tiempo:12:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [12](tiempo:12:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [12](tiempo:12:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [12](tiempo:12:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a la [1 de la tarde](tiempo:13:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a la [una de la tarde](tiempo:13:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a la [1](tiempo:13:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a la [1](tiempo:13:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a la [1](tiempo:13:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a la [1](tiempo:13:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [2 de la tarde](tiempo:14:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [dos de la tarde](tiempo:14:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [2](tiempo:14:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [2](tiempo:14:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [2](tiempo:14:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [2](tiempo:14:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [3 de la tarde](tiempo:15:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [tres de la tarde](tiempo:15:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [3](tiempo:15:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [3](tiempo:15:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [3](tiempo:15:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [3](tiempo:15:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [4 de la tarde](tiempo:16:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [cuatro de la tarde](tiempo:16:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [4](tiempo:16:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [4](tiempo:16:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [4](tiempo:16:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [4](tiempo:16:00:00)?
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [5 de la tarde](tiempo:17:00:00)
+    - Esta libre el [aula 304](habitacion:Aula 304) a las [cinco de la tarde](tiempo:17:00:00)
+    - Está disponible el [aula 304](habitacion:Aula 304) a las [5](tiempo:17:00:00)?
+    - Puedo usar el [aula 304](habitacion:Aula 304) a las [5](tiempo:17:00:00)?
+    - Quiero reservar el [aula 304](habitacion:Aula 304) a las [5](tiempo:17:00:00)
+    - Hay disponibilidad en el [aula 304](habitacion:Aula 304) a las [5](tiempo:17:00:00)?
+
+- intent: ask_day_time
+  examples: |
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [7 de la mañana](tiempo:07:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [siete de la mañana](tiempo:07:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [7](tiempo:07:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [7](tiempo:07:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [7 de la mañana](tiempo:07:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [7 de la mañana](tiempo:07:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [7 de la mañanae](tiempo:07:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [7 de la mañana](tiempo:07:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [7 de la mañana](tiempo:07:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [7 de la mañana](tiempo:07:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [7 de la mañana](tiempo:07:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [7 de la mañana](tiempo:07:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [7 de la mañana](tiempo:07:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [7 de la mañana](tiempo:07:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [7 de la mañana](tiempo:07:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [7 de la mañana](tiempo:07:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [7 de la mañana](tiempo:07:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [7 de la mañana](tiempo:07:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [7 de la mañana](tiempo:07:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [7 de la mañana](tiempo:07:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [7 de la mañana](tiempo:07:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [7 de la mañana](tiempo:07:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [7 de la mañana](tiempo:07:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [7 de la mañana](tiempo:07:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [7 de la mañana(tiempo:07:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [8 de la mañana](tiempo:08:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [ocho de la mañana](tiempo:08:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [8](tiempo:08:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [8](tiempo:08:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [8 de la mañana](tiempo:08:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [8 de la mañana](tiempo:08:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [ocho de la mañana](tiempo:08:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [8 de la mañana](tiempo:08:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [8 de la mañana](tiempo:08:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [8 de la mañana](tiempo:08:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [8 de la mañana](tiempo:08:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [ocho de la mañana](tiempo:08:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [8 de la mañana](tiempo:08:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [8 de la mañana](tiempo:08:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [8 de la mañana](tiempo:08:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [8 de la mañana](tiempo:08:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [ocho de la mañana](tiempo:08:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [8 de la mañana](tiempo:08:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [8 de la mañana](tiempo:08:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [8 de la mañana](tiempo:08:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [8 de la mañana](tiempo:08:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [ocho de la mañana](tiempo:08:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [8 de la mañana](tiempo:08:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [8 de la mañana](tiempo:08:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [8 de la mañana(tiempo:08:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [9 de la mañana](tiempo:09:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [nueve de la mañana](tiempo:09:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [9](tiempo:09:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [9](tiempo:09:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [9 de la mañana](tiempo:09:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [9 de la mañana](tiempo:09:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [nueve de la mañana](tiempo:09:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [9 de la mañana](tiempo:09:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [9 de la mañana](tiempo:09:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [9 de la mañana](tiempo:09:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [9 de la mañana](tiempo:09:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [nueve de la mañana](tiempo:09:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [9 de la mañana](tiempo:09:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [9 de la mañana](tiempo:09:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [9 de la mañana](tiempo:09:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [9 de la mañana](tiempo:09:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [nueve de la mañana](tiempo:09:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [9 de la mañana](tiempo:09:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [9 de la mañana](tiempo:09:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [9 de la mañana](tiempo:09:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [9 de la mañana](tiempo:09:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [nueve de la mañana](tiempo:09:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [9 de la mañana](tiempo:09:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [9 de la mañana](tiempo:09:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [9 de la mañana(tiempo:09:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [10 de la mañana](tiempo:10:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [diez de la mañana](tiempo:10:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [10](tiempo:10:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [10](tiempo:10:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [10 de la mañana](tiempo:10:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [10 de la mañana](tiempo:10:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [diez de la mañana](tiempo:10:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [10 de la mañana](tiempo:10:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [10 de la mañana](tiempo:10:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [10 de la mañana](tiempo:10:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [10 de la mañana](tiempo:10:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [diez de la mañana](tiempo:10:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [10 de la mañana](tiempo:10:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [10 de la mañana](tiempo:10:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [10 de la mañana](tiempo:10:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [10 de la mañana](tiempo:10:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [diez de la mañana](tiempo:10:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [10 de la mañana](tiempo:10:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [10 de la mañana](tiempo:10:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [10 de la mañana](tiempo:10:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [10 de la mañana](tiempo:10:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [diez de la mañana](tiempo:10:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [10 de la mañana](tiempo:10:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [10 de la mañana](tiempo:10:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [10 de la mañana(tiempo:10:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [11 de la mañana](tiempo:11:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [once de la mañana](tiempo:11:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [11](tiempo:11:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [11](tiempo:11:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [11 de la mañana](tiempo:11:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [11 de la mañana](tiempo:11:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [once de la mañana](tiempo:11:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [11 de la mañana](tiempo:11:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [11 de la mañana](tiempo:11:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [11 de la mañana](tiempo:11:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [11 de la mañana](tiempo:11:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [once de la mañana](tiempo:11:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [11 de la mañana](tiempo:11:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [11 de la mañana](tiempo:11:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [11 de la mañana](tiempo:11:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [11 de la mañana](tiempo:11:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [once de la mañana](tiempo:11:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [11 de la mañana](tiempo:11:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [11 de la mañana](tiempo:11:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [11 de la mañana](tiempo:11:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [11 de la mañana](tiempo:11:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [once de la mañana](tiempo:11:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [11 de la mañana](tiempo:11:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [11 de la mañana](tiempo:11:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [11 de la mañana(tiempo:11:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [12 de la tarde](tiempo:12:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [doce de la tarde](tiempo:12:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [12](tiempo:12:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [12](tiempo:12:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [12 de la tarde](tiempo:12:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [12 de la tarde](tiempo:12:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [doce de la tarde](tiempo:12:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [12 de la tarde](tiempo:12:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [12 de la tarde](tiempo:12:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [12 de la tarde](tiempo:12:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [12 de la tarde](tiempo:12:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [doce de la tarde](tiempo:12:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [12 de la tarde](tiempo:12:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [12 de la tarde](tiempo:12:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [12 de la tarde](tiempo:12:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [12 de la tarde](tiempo:12:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [doce de la tarde](tiempo:12:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [12 de la mañtardeana](tiempo:12:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [12 de la tarde](tiempo:12:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [12 de la tarde](tiempo:12:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [12 de la tarde](tiempo:12:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [doce de la tarde](tiempo:12:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [12 de la tarde](tiempo:12:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [12 de la tarde](tiempo:12:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [12 de la tarde(tiempo:12:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [1 de la tarde](tiempo:13:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [una de la tarde](tiempo:13:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [1](tiempo:13:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [1](tiempo:13:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [1 de la tarde](tiempo:13:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [1 de la tarde](tiempo:13:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [una de la tarde](tiempo:13:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [1 de la tarde](tiempo:13:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [1 de la tarde](tiempo:13:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [1 de la tarde](tiempo:13:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [1 de la tarde](tiempo:13:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [una de la tarde](tiempo:13:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [1 de la tarde](tiempo:13:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [1 de la tarde](tiempo:13:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [1 de la tarde](tiempo:13:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [1 de la tarde](tiempo:13:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [una de la tarde](tiempo:13:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [1 de la mañtardeana](tiempo:13:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [1 de la tarde](tiempo:13:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [1 de la tarde](tiempo:13:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [1 de la tarde](tiempo:13:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [una de la tarde](tiempo:13:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [1 de la tarde](tiempo:13:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [1 de la tarde](tiempo:13:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [1 de la tarde(tiempo:13:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [2 de la tarde](tiempo:14:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [dos de la tarde](tiempo:14:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [2](tiempo:14:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [2](tiempo:14:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [2 de la tarde](tiempo:14:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [2 de la tarde](tiempo:14:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [dos de la tarde](tiempo:14:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [2 de la tarde](tiempo:14:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [2 de la tarde](tiempo:14:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [2 de la tarde](tiempo:14:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [2 de la tarde](tiempo:14:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [dos de la tarde](tiempo:14:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [2 de la tarde](tiempo:14:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [2 de la tarde](tiempo:14:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [2 de la tarde](tiempo:14:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [2 de la tarde](tiempo:14:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [dos de la tarde](tiempo:14:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [2 de la mañtardeana](tiempo:14:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [2 de la tarde](tiempo:14:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [2 de la tarde](tiempo:14:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [2 de la tarde](tiempo:14:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [dos de la tarde](tiempo:14:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [2 de la tarde](tiempo:14:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [2 de la tarde](tiempo:14:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [2 de la tarde(tiempo:14:00:00
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [3 de la tarde](tiempo:15:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [3 de la tarde](tiempo:15:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [3 de la tarde](tiempo:15:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [3 de la tarde](tiempo:15:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [3 de la tarde](tiempo:15:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [3 de la tarde](tiempo:15:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [3 de la tarde](tiempo:15:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [3 de la tarde](tiempo:15:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [3 de la tarde](tiempo:15:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [3 de la tarde](tiempo:15:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [3 de la tarde](tiempo:15:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [3 de la tarde](tiempo:15:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [3 de la tarde](tiempo:15:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [3 de la tarde](tiempo:15:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [3 de la tarde](tiempo:15:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [3 de la tarde](tiempo:15:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [3 de la tarde](tiempo:15:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [3 de la tarde](tiempo:15:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [3 de la tarde](tiempo:15:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [3 de la tarde](tiempo:15:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [3 de la tarde](tiempo:15:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [3 de la tarde](tiempo:15:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [3 de la tarde](tiempo:15:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [3 de la tarde](tiempo:15:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [3 de la tarde](tiempo:15:00:00)
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [4 de la tarde](tiempo:16:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [cuatro de la tarde](tiempo:16:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [4](tiempo:16:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [4](tiempo:16:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [4 de la tarde](tiempo:16:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [4 de la tarde](tiempo:16:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [cuatro de la tarde](tiempo:16:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [4 de la tarde](tiempo:16:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [4 de la tarde](tiempo:16:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [4 de la tarde](tiempo:16:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [4 de la tarde](tiempo:16:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [cuatro de la tarde](tiempo:16:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [4 de la tarde](tiempo:16:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [4 de la tarde](tiempo:16:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [4 de la tarde](tiempo:16:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [4 de la tarde](tiempo:16:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [cuatro de la tarde](tiempo:16:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [4 de la mañtardeana](tiempo:16:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [4 de la tarde](tiempo:16:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [4 de la tarde](tiempo:16:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [4 de la tarde](tiempo:16:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [cuatro de la tarde](tiempo:16:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [4 de la tarde](tiempo:16:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [4 de la tarde](tiempo:16:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [4 de la tarde(tiempo:16:00:00
+    - el [Lunes](dia:Lunes) hay algun laboratorio disponible a las [5 de la tarde](tiempo:17:00:00)
+    - el [lunes](dia:Lunes) hay alguna aula a las [cinco de la tarde](tiempo:17:00:00)
+    - en [LUNES](dia:Lunes) hay algún aula disponible a las [5](tiempo:17:00:00)
+    - ¿Hay algún laboratorio disponible el [Lunes](dia:Lunes) a las [5](tiempo:17:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Lunes](dia:Lunes) a las [5 de la tarde](tiempo:17:00:00)
+    - el [Martes](dia:Martes) hay algun laboratorio disponible a las [5 de la tarde](tiempo:17:00:00)
+    - el [martes](dia:Martes) hay alguna aula a las [cinco de la tarde](tiempo:17:00:00)
+    - en [MARTES](dia:Martes) hay algún aula disponible a las [5 de la tarde](tiempo:17:00:00)
+    - ¿Hay algún laboratorio disponible el [Martes](dia:Martes) a las [5 de la tarde](tiempo:17:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Martes](dia:Martes) a las [5 de la tarde](tiempo:17:00:00)
+    - el [Miercoles](dia:Miercoles) hay algun laboratorio disponible a las [5 de la tarde](tiempo:17:00:00)
+    - el [miercoles](dia:Miercoles) hay alguna aula a las [cinco de la tarde](tiempo:17:00:00)
+    - en [MIERCOLES](dia:Miercoles) hay algún aula disponible a las [5 de la tarde](tiempo:17:00:00)
+    - ¿Hay algún laboratorio disponible el [Miercoles](dia:Miercoles) a las [5 de la tarde](tiempo:17:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Miercoles](dia:Miercoles) a las [5 de la tarde](tiempo:17:00:00)
+    - el [Jueves](dia:Jueves) hay algun laboratorio disponible a las [5 de la tarde](tiempo:17:00:00)
+    - el [jueves](dia:Jueves) hay alguna aula a las [cinco de la tarde](tiempo:17:00:00)
+    - en [JUEVES](dia:Jueves) hay algún aula disponible a las [5 de la mañtardeana](tiempo:17:00:00)
+    - ¿Hay algún laboratorio disponible el [Jueves](dia:Jueves) a las [5 de la tarde](tiempo:17:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Jueves](dia:Jueves) a las [5 de la tarde](tiempo:17:00:00)
+    - el [Viernes](dia:Viernes) hay algun laboratorio disponible a las [5 de la tarde](tiempo:17:00:00)
+    - el [viernes](dia:Viernes) hay alguna aula a las [cinco de la tarde](tiempo:17:00:00)
+    - en [VIERNES](dia:Viernes) hay algún aula disponible a las [5 de la tarde](tiempo:17:00:00)
+    - ¿Hay algún laboratorio disponible el [Viernes](dia:Viernes) a las [5 de la tarde](tiempo:17:00:00)?
+    - Me gustaría saber si hay algun laboratorio el [Viernes](dia:Viernes) a las [5 de la tarde(tiempo:17:00:00
+    - Existe algun laboratorio disponible el [martes](dia) a las [5 de la mañana](tiempo)
+    - Hay algun laboratorio disponible el [lunes](dia) a las [5 de la mañana](tiempo)
+    - que laboratorio hay el [martes](dia) a las [10 de la mañana](tiempo)
+    - que aulas estan reservadas para el [martes][dia] a las [9 de la mañana](tiempo)
+
+- intent: ask_aula_libre
+  examples: |
+    - ¿Cuándo estará disponible el próximo aula?
+    - ¿Hay alguna aula libre en este momento?
+    - ¿Cuáles son las aulas disponibles en este momento?
+    - Necesito encontrar un aula vacía ahora mismo ¿Puedes ayudarme?
+    - ¿Hay algún aula desocupada en las próximas horas?
+    - Quiero reservar un aula para una reunión ¿Cuáles están disponibles?
+    - ¿Cuáles son los tiempos de disponibilidad de las aulas?
+    - ¿Puedo reservar un aula para un evento mañana?
+    - ¿Cuál es el procedimiento para reservar un aula?
+    - ¿Hay alguna restricción de uso para las aulas disponibles?
+    - hay algun aula disponible ahora?
+    - esta algun aula disponible?
+    - esta algun laboratorio disponible?
+    - hay algun laboratorio disponible?
+    - sabes si hay algun laboratorios disponible?
+    - cuantos laboratorios hay disponibles?
+    - cuantas aulas hay disponibles?
+    - necesito saber cuantos laboratorios hay disponibles
+    - necesito saber cuantas aulas hay disponibles
+    - quiero saber cuantas aulas hay disponible
+    - aulas disponibles
+    - laboratorios disponibles
+    - ¿Existe alguna aula disponible en este momento?
+    - ¿Hay alguna aula desocupada ahora mismo?
+    - ¿Está disponible algún laboratorio en este momento?
+    - ¿Hay algún laboratorio libre ahora mismo?
+    - ¿Sabes si hay algún laboratorio disponible en este momento?
+    - ¿Cuántos laboratorios están actualmente disponibles?
+    - ¿Cuántas aulas están actualmente disponibles?
+    - Necesito saber cuántos laboratorios están disponibles.
+    - Necesito saber cuántas aulas están disponibles.
+    - Quiero saber cuántas aulas están disponibles.
+    - hay disponibilidad de laboratorios
+    - hay disponibilidad de aulas
+    - dime las disponibilidad de aulas en este momento
+    - dime las disponiblidad de laboratorios en este momneto
+    - que laboratorios estan disponibles
+    - que aulas estan disponibles
+    - me puedes decir si hay alguna aula
+    - me puedes decir si existe alguna aula
+    - me puedes decir si hay alguna laboratorio disponible
+    - me puedes decir si existe alguna aula disponible
+
+- intent: ask_room_day
+  examples: |
+    - El dia [Lunes](dia) esta disponible el [laboratorio 102](habitacion) a las [10 de la mañana](tiempo)
+    - Sabes si el [Martes](dia) esta disponible el [Laboratorio102](habitacion) a las [10 de la mañana](tiempo)
+    - Esta disponible el [Laboratorio ciento dos](habitacion) el [Jueves](dia) a las [10 de la mañana](tiempo)
+    - El dia [Miercoles](dia) esta disponible el [laboratorio  102](habitacion) a las [10 de la mañana](tiempo)
+    - Sabes si el [Viernes](dia) esta disponible el [Laboratorio102](habitacion) a las [10 de la mañana](tiempo)
+    - Esta disponible el [Laboratorio ciento dos](habitacion) el [Jueves](dia) a las [10 de la mañana](tiempo)
+    - El [Lunes](dia) está disponible el [aula 101](habitacion) a las [10 de la mañan](tiempo)
+    - ¿Sabes si el [lune](dia) está disponible el [aula  101]habitacion) a las [10 de la mañana](tiempo)?
+    - Quiero reservar el [Martes](dia) el [laboratorio  101](habitacion) a las [10 de la mañan](tiempo)
+    - ¿Está disponible el [jueve](dia) el [aula101](habitacion) a las [10 de la mañana](tiempo)?
+    - Necesito el [Martes](dia) el [aula101](habitacion) a las [10 de la mañana](tiempo)
+    - sabes si existe disponibilidad el [lunes](dia) a las [3 de la tarde][tiempo] para usar el [laboratorio 205](habitacion)
+    - necesito saber si puedo usar el [laboratorio 205](habitacion) el [martes](dia) a las [10 de la mañana](tiempo)
+    - está libre el [aula 101](habitacion) para usarlo el [viernes](dia) a las [4 de la tarde](tiempo)?
+    - quisiera saber si el [aula 101](habitacion) está disponible el [miércoles](dia) a las [3 de la tarde](tiempo)
+
+- intent: ask_weather
+  examples: |
+    - como esta el clima en [Calceta](canton)
+    - dime el clima de [calceta](canton:Calceta)
+    - Cual es la temperatura en [Calceta](canton:Calceta)
+    - hace frio en [calcetaa](canton:Calceta)?
+    - hace calor en [klz](canton:Calceta)?
+    - esta lloviendo en [KLZ](canton:Calceta)?
+    - hace sol en [calcete](canton:Calceta)?
+    - como esta el clima en [Junin](canton)?
+    - dime el clima de [junin](canton:Junin)
+    - cual es la temperatura en [juniin](canton:Junin)?
+    - hace frio en [Junín](canton:Junin)?
+    - hace calor en [junín](canton:Junin)?
+    - esta lloviendo en [juninn](canton:Junin)?
+    - hace sol en [juniin](canton:Junin)?
+    - como esta el clima en [Manta](canton)?
+    - dime el clima de [manta](canton:Manta)
+    - cual es la temperatura en [Mantá](canton:Manta)?
+    - hace frio en [mantaaa](canton:Manta)?
+    - hace calor en [MANTA](canton:Manta)?
+    - esta lloviendo en [mantaaa](canton:Manta)?
+    - hace sol en [manto](canton:Manta)?
+    - como esta el clima en [Portoviejo](canton)?
+    - dime el clima de [portoviejo](canton:Portoviejo)
+    - cual es la temperatura en [porto viejo](canton:Portoviejo)?
+    - hace frio en [Portovíejo](canton:Portoviejo)?
+    - hace calor en [Portoviejó](canton:Portoviejo)?
+    - esta lloviendo en [PORTOVIEJA](canton:Portoviejo)?
+    - hace sol en [portovieji](canton:Portoviejo)?
+    - como esta el clima en [Tosagua](canton)?
+    - dime el clima de [tosagua](canton:Tosagua)
+    - cual es la temperatura en [tos agua](canton:Tosagua)?
+    - hace frio en [tosaguá](canton:Tosagua)?
+    - hace calor en [tósagua](canton:Tosagua)?
+    - esta lloviendo en [tosaguaa](canton:Tosagua)?
+    - hace sol en [tosaguo](canton:Tosagua)?   
+    - como esta el clima en [Rocafuerte](canton)?
+    - dime el clima de [rocafuerte](canton:Rocafuerte)
+    - cual es la temperatura en [roca fuerte](canton:Rocafuerte)?
+    - hace frio en [Rocafuerté](canton:Rocafuerte)?
+    - hace calor en [rocafúerte](canton:Rocafuerte)?
+    - esta lloviendo en [rocofuerte](canton:Rocafuerte)?
+    - hace sol en [ROCAfuerte](canton:Rocafuerte)?
+    - como esta el clima en [Chone](canton)?
+    - dime el clima de [Chone](canton:Chone)
+    - cual es la temperatura en [chonee](canton:Chone)?
+    - hace frio en [choné](canton:Chone)?
+    - hace calor en [CHONE](canton:Chone)?
+    - esta lloviendo en [chooone](canton:Chone)?
+    - hace sol en [choneee](canton:Chone)?
+    - como esta el clima en [Chone](canton)?
+    - dime el clima de [Montecristi](canton:Montecristi)
+    - cual es la temperatura en [MONTECTISTI](canton:Montecristi)?
+    - hace frio en [montecristi](canton:Montecristi)?
+    - hace calor en [Montecristi](canton:Montecristi)?
+    - esta lloviendo en [Montecristi](canton:Montecristi)?
+    - hace sol en [Montecristi](canton:Montecristi)?  
+
+- regex: tiempo
+  examples: |
+    - \b(\d{1,2})\b\s*(?:d[eu]\s*la)?\s*(?:m[au]ñana|tarde)?\s*(\d{1,2})?
+
+- regex: habitacion
+  examples: |
+    - (?i)(aula|laboratorio)(\s+(\d{3})|\s?(\d{1,3}))
+
+- regex: dia
+  examples: |
+    - (?i)(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo)

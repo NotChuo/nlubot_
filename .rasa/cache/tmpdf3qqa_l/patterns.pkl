@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dia",
+    "pattern": "(?i)(lunes|martes|miércoles|miercoles|jueves|viernes|sábado|sabado|domingo)"
+  },
+  {
+    "name": "habitacion",
+    "pattern": "(?i)(aula|laboratorio)(\\s+(\\d{3})|\\s?(\\d{1,3}))"
+  },
+  {
+    "name": "tiempo",
+    "pattern": "\\b(\\d{1,2})\\b\\s*(?:d[eu]\\s*la)?\\s*(?:m[au]ñana|tarde)?\\s*(\\d{1,2})?"
+  },
+  {
+    "name": "nombre",
+    "pattern": "(\\bnombres\\.txt\\b)"
+  },
+  {
+    "name": "apellido",
+    "pattern": "(\\bCedeño\\b)"
+  }
+]

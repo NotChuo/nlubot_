@@ -1,0 +1,214 @@
+version: '3.1'
+
+intents:
+- affirm
+- ask_weather
+- bot_challenge
+- bot_challenge_human
+- deny
+- give_time
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+- bot_feels
+- profany_and_Abuse
+- nonsense_words
+- mood_thanks
+- bot_challenge_inception
+- bot_challenge_father
+- ask_teacher
+- ask_room
+- ask_time_room
+- ask_day_time
+- ask_aula_libre
+- skills
+- ask_room_day
+
+responses:
+
+  utter_greet:
+  - text: ¡Hola! 😃 Soy un asistente virtual para brindar soporte a las aplicaciones de la Carrera de Computación ESPAM MFL, ¿En qué puedo ayudarte hoy? 
+  - text: Buenos días 😁, Soy un asistente virtual para brindar soporte a las aplicaciones de la Carrera de Computación ESPAM MFL, ¿cómo puedo ser de ayuda? 
+  - text: Bienvenido 😊, Soy un asistente virtual para brindar soporte a las aplicaciones de la Carrera de Computación ESPAM MFL, ¿en qué puedo ayudarte?
+  - text: Saludos 😄, Soy un asistente virtual para brindar soporte a las aplicaciones de la Carrera de Computación ESPAM MFL, ¿qué necesitas?
+
+  utter_bot_feels:
+  - text: Como modelo de lenguaje, no tengo emociones , pero estoy programado para ayudarte. ¿Hay algo específico en lo que pueda ayudarte hoy? 🤔
+  - text: Como modelo de lenguaje, no tengo emociones ni la capacidad de sentir. Estoy diseñado para procesar  lenguaje natural y proporcionar respuestas útiles en función de la entrada que recibo. ¿En qué puedo ayudarte hoy? 🤔
+
+  utter_cheer_up:
+  - text: 'Aqui hay algo para animarte:'
+    image: https://cdn-3.expansion.mx/4c/d0/c53a17fd4927a00a12c144b540f6/piedra-pelicula-076-everything-everywhere-all-at-once-2022-27.jpg
+  - text: 'Mira esto:'
+    image: https://media.tenor.com/XCl9rGMVmhoAAAAC/no-estes-triste-hora-de-aventura-la.gif
+
+  utter_did_that_help:
+  - text: ¿Fue de ayuda? 👀
+  - text: ¿Te sirvio? 🤔
+  - text: ¿Fue útil? 🤖
+
+  utter_happy:
+  - text: Genial😀
+  - text: Me alegra escuchar eso😁
+  - text: Genial! 👍 Si necesitas algo más, solo dímelo! 
+  - text: ¡Perfecto! 👌 Estoy aquí si necesitas cualquier cosa. 
+
+  utter_you_are_welcome:
+  - text: De nada! 👍 Estoy aquí para ayudarte. 
+  - text: No hace falta, mi deber es ayudarte. 😊
+  - text: No hay problema, siempre estoy a tu disposición. 😊
+
+  utter_happy_help:
+  - text: ¡Qué alegría ayudarte! 😃
+  - text: Me alegra poder ser de ayuda. 😊
+  - text: Estoy contento de poder ayudarte. 😁
+  - text: Es un placer poder ayudarte en algo que necesitas. 🤗
+  - text: Estoy feliz de poder responder a tus preguntas. 😃
+  - text: Estoy emocionado de ser un recurso útil para ti. 🤖
+  - text: Es un placer hacerte más fácil la vida con mis respuestas. 😊
+
+  utter_sad_help:
+  - text: Lo siento mucho 😞, Estoy aprendiendo. 
+
+  utter_abuse:
+  - text: Lo siento, no puedo responder a eso. Por favor, háblame con respeto y utiliza un lenguaje apropiado. ✖️
+
+  utter_idu:
+  - text: Lo siento, no entiendo tu petición . Por favor, inténtalo de nuevo. 🤔
+
+  utter_goodbye:
+  - text: Adiós 👋
+  - text: Gracias por usar nuestro servicio, ¡hasta pronto! 😊
+  - text: Fue un placer ayudarte, ¡que tengas un buen día! 😊
+  - text: Espero haber sido de ayuda, ¡nos vemos pronto! 👋
+  - text: Si tienes más consultas, no dudes en preguntar. ¡Hasta luego! 👋
+  - text: Estamos aquí para ayudarte en cualquier momento, ¡hasta pronto! 👋
+  - text: Gracias por visitarnos, ¡nos vemos en otra ocasión! 👋
+  - text: Ha sido un placer conversar contigo, ¡hasta la próxima! 👋
+  - text: Si necesitas algo más, no dudes en preguntar. ¡Adiós! 👋
+  - text: Gracias por confiar en nosotros, ¡nos vemos pronto! 👋
+  - text: Estamos aquí para ayudarte en cualquier momento, ¡hasta la próxima! 👋
+
+  utter_inception:
+  - text: Fui creado por Estudiantes de la ESPAM MFL, especificamente de la Carrera de Computación.
+  - text: Me diseñaron estudiantes de la ESPAM MFL
+
+  utter_father:
+  - text: No tengo padres, pero fui entrenado estudiantes de la Carrera de Computación
+
+  utter_iamabot:
+  - text: Soy un asistente virtual diseñado para ayudarte con tus preguntas. 🤖
+  - text: Soy un chatbot programado para ayudarte con tus consultas. 🤖
+  - text: Soy una inteligencia artificial diseñada para responder a tus preguntas. 🤖
+  - text: Mi función es ayudarte como un asistente virtual. 🤖
+  - text: Estoy aquí como un chatbot para ayudarte en lo que necesites. 🤖
+  - text: Soy un programa de inteligencia artificial diseñado para brindarte información y asistencia. 🤖
+  - text: Mi objetivo es ayudarte en tus consultas y preguntas. 🤖
+  - text: Estoy aquí para brindarte información y asistencia de manera rápida y precisa. 🤖
+
+  utter_fallback:
+  - text: |
+      Lo siento, no pude entenderte. ¿Podrías reformularlo, por favor? 
+      Recuerda que soy un Chatbot que brinda soporto a la Aplicaciones de la Carrera de computacion 
+      Mis funciones pricipales son:
+      - Preguntarme por la hora 🕛
+      - Clima 🌤️ 🌧️ 
+      - Preguntarme por la disponibilidad de laboratorios 
+        Hazlo de la siguientes formas:
+        - Que aulas tiene disponible el ingeniero Kelvin Rosado
+        - Esta el laboratorio 103 disponible?
+        - el aula 101 esta disponilible a las 7 de la mañana?
+        - Hay disponilibidad de laboratorios
+        - Sabes si el lunes esta disponible el aula 101 a las 10 de la mañana 
+
+  utter_Skills:
+  - text: |
+      Mis funciones pricipales son:
+      - Preguntarme por la hora 🕛
+      - Clima 🌤️ 🌧️ 
+      - Preguntarme por la disponibilidad de laboratorios 
+        Hazlo de la siguientes formas:
+        - Que aulas tiene disponible el ingeniero Kelvin Rosado
+        - Esta el laboratorio 103 disponible?
+        - el aula 301 esta disponilible a las 7 de la mañana?
+        - Hay disponilibidad de laboratorios
+        - Sabes si el lunes esta disponible el aula 101 a las 10 de la mañana
+
+  utter_help_skill:
+  - text: Con que quieres empezar? 🤔
+  - text: hazme un pregunta de mis funciones principales 😊
+
+  utter_iambotnothuman:
+  - text: Soy un programa de inteligencia artificial, no un ser humano. 🤖❌👨‍🦱
+  - text: Soy un bot diseñado para responder a tus preguntas, no una persona real. 🤖💬❌👨‍🦱
+  - text: Estoy hecho para brindarte asistencia y no para tener una conversación humana. 🤖🛠️💬❌👨‍🦱
+  - text: Soy una inteligencia artificial y no una persona real, pero estoy aquí para ayudarte. 🤖💻❌👨‍🦱🤝
+  - text: No soy un ser humano, soy un chatbot programado para responder a tus consultas. 🤖❌👨‍🦱💬
+  - text: No soy una persona, soy un asistente virtual diseñado para ayudarte en lo que necesites. 🤖💻❌👨‍🦱💬
+  - text: Soy un programa de inteligencia artificial y no un ser humano, pero estoy aquí para ayudarte en lo que pueda. 🤖💻❌👨‍🦱🤝
+  - text: No tengo personalidad humana, soy un bot programado para brindarte información y asistencia. 🤖❌👨‍🦱😐💬📚
+  - text: Soy una inteligencia artificial diseñada para responder a tus preguntas, no un ser humano con personalidad y emociones. 🤖💻❌👨‍🦱😐💬🤔
+
+actions:
+- action_ask_weather
+- action_show_time
+- action_default_fallback
+- action_ask_teacher
+- action_ask_room
+- action_ask_time_room
+- action_day_time
+- action_aula_libre
+- action_room_day
+- action_validate_entities
+
+entities:
+- canton
+- nombre
+- apellido
+- tiempo
+- dia
+- habitacion
+
+slots:
+  canton:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: canton
+  nombre:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: nombre
+  apellido:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: apellido
+  tiempo:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: tiempo
+  dia:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: dia
+  habitacion:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: habitacion
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
